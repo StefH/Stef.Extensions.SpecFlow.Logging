@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>0.0.1-preview-01</Version>
+    <Copyright>Copyright © 2024 Stef Heyenrath</Copyright>
+    <Authors>Stef Heyenrath</Authors>
+    <PackageIcon>specflow.png</PackageIcon>
+    <PackageReleaseNotes>See ReleaseNotes.md</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/StefH/Stef.Extensions.SpecFlow.Logging</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/StefH/Stef.Extensions.SpecFlow.Logging</RepositoryUrl>
+    <PackageTags>logger;specflow;output</PackageTags>
+    <Description>Microsoft.Extension.Logging.ILogger implementation for SpecFlow which uses ISpecFlowOutputHelper</Description>
+    <PackageReadmeFile>PackageReadme.md</PackageReadmeFile>
+    <TargetFrameworks>net48;netstandard2.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../resources/specflow.png" Pack="true" PackagePath="" />
+    <None Include="../../PackageReadme.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Polyfill" Version="7.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+  </ItemGroup>
+
+</Project>
