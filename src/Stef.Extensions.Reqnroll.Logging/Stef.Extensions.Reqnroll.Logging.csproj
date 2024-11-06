@@ -4,16 +4,16 @@
     <Version>0.0.1-preview-01</Version>
     <Copyright>Copyright © 2024 Stef Heyenrath</Copyright>
     <Authors>Stef Heyenrath</Authors>
-    <PackageIcon>specflow-icon.png</PackageIcon>
+    <PackageIcon>reqnroll-icon.png</PackageIcon>
     <PackageReleaseNotes>See ReleaseNotes.md</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/StefH/Stef.Extensions.SpecFlow.Logging</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/StefH/Stef.Extensions.SpecFlow.Logging</RepositoryUrl>
     <PackageTags>logger;specflow;output</PackageTags>
-    <Description>Microsoft.Extension.Logging.ILogger implementation for SpecFlow which uses ISpecFlowOutputHelper</Description>
+    <Description>Microsoft.Extension.Logging.ILogger implementation for Reqnroll which uses IReqnrollOutputHelper</Description>
     <PackageReadmeFile>PackageReadme.md</PackageReadmeFile>
-    <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
@@ -24,7 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../resources/specflow-icon.png" Pack="true" PackagePath="" />
+    <None Include="../../resources/reqnroll-icon.png" Pack="true" PackagePath="" />
     <None Include="../../PackageReadme.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
@@ -34,7 +34,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="Reqnroll" Version="2.1.1" />
   </ItemGroup>
 
 </Project>
