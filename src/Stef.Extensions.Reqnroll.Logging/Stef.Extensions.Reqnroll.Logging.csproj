@@ -10,7 +10,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/StefH/Stef.Extensions.SpecFlow.Logging</RepositoryUrl>
-    <PackageTags>logger;specflow;output</PackageTags>
+    <PackageTags>logger;reqnroll;output</PackageTags>
     <Description>Microsoft.Extension.Logging.ILogger implementation for Reqnroll which uses IReqnrollOutputHelper</Description>
     <PackageReadmeFile>PackageReadme.md</PackageReadmeFile>
     <TargetFramework>netstandard2.0</TargetFramework>
