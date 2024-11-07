@@ -1,10 +1,10 @@
 using System.Text;
 using Microsoft.Extensions.Logging;
-using TechTalk.SpecFlow.Infrastructure;
+using Reqnroll;
 
-namespace Stef.Extensions.SpecFlow.Logging;
+namespace Stef.Extensions.Reqnroll.Logging;
 
-public class SpecFlowLogger : ILogger
+public class ReqnrollLogger : ILogger
 {
     private static readonly Dictionary<LogLevel, string> LogLevelStrings = new()
     {
@@ -16,25 +16,25 @@ public class SpecFlowLogger : ILogger
         { LogLevel.Critical, nameof(LogLevel.Critical) }
     };
 
-    private readonly ISpecFlowOutputHelper _outputHelper;
+    private readonly IReqnrollOutputHelper _outputHelper;
     private readonly string? _categoryName;
-    private readonly SpecFlowLoggerOptions _options;
+    private readonly ReqnrollLoggerOptions _options;
     private readonly LoggerExternalScopeProvider _scopeProvider;
 
-    public static ILogger CreateLogger(ISpecFlowOutputHelper outputHelper) => new SpecFlowLogger(outputHelper, new LoggerExternalScopeProvider(), string.Empty);
-    public static ILogger<T> CreateLogger<T>(ISpecFlowOutputHelper outputHelper) => new SpecFlowLogger<T>(outputHelper, new LoggerExternalScopeProvider());
+    public static ILogger CreateLogger(IReqnrollOutputHelper outputHelper) => new ReqnrollLogger(outputHelper, new LoggerExternalScopeProvider(), string.Empty);
+    public static ILogger<T> CreateLogger<T>(IReqnrollOutputHelper outputHelper) => new ReqnrollLogger<T>(outputHelper, new LoggerExternalScopeProvider());
 
-    public SpecFlowLogger(ISpecFlowOutputHelper outputHelper, LoggerExternalScopeProvider scopeProvider, string? categoryName)
+    public ReqnrollLogger(IReqnrollOutputHelper outputHelper, LoggerExternalScopeProvider scopeProvider, string? categoryName)
         : this(outputHelper, scopeProvider, categoryName, appendScope: true)
     {
     }
 
-    public SpecFlowLogger(ISpecFlowOutputHelper outputHelper, LoggerExternalScopeProvider scopeProvider, string? categoryName, bool appendScope)
-        : this(outputHelper, scopeProvider, categoryName, options: new SpecFlowLoggerOptions { IncludeScopes = appendScope })
+    public ReqnrollLogger(IReqnrollOutputHelper outputHelper, LoggerExternalScopeProvider scopeProvider, string? categoryName, bool appendScope)
+        : this(outputHelper, scopeProvider, categoryName, options: new ReqnrollLoggerOptions { IncludeScopes = appendScope })
     {
     }
 
-    public SpecFlowLogger(ISpecFlowOutputHelper outputHelper, LoggerExternalScopeProvider scopeProvider, string? categoryName, SpecFlowLoggerOptions? options)
+    public ReqnrollLogger(IReqnrollOutputHelper outputHelper, LoggerExternalScopeProvider scopeProvider, string? categoryName, ReqnrollLoggerOptions? options)
     {
         _outputHelper = outputHelper;
         _scopeProvider = scopeProvider;
@@ -100,7 +100,6 @@ public class SpecFlowLogger : ILogger
         {
             return logLevelString;
         }
-
         throw new ArgumentOutOfRangeException(nameof(logLevel));
     }
 }

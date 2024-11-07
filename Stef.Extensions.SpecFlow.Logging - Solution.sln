@@ -17,7 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6D07EE07-50C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stef.Extensions.SpecFlow.Logging", "src\Stef.Extensions.SpecFlow.Logging\Stef.Extensions.SpecFlow.Logging.csproj", "{F7C794C9-2B88-4C4D-8075-E4309F19C033}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6E68E514-57AD-4B18-B9BB-70D4FF6AB5A5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6E68E514-57AD-4B18-B9BB-70D4FF6AB5A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stef.Extensions.Reqnroll.Logging", "src\Stef.Extensions.Reqnroll.Logging\Stef.Extensions.Reqnroll.Logging.csproj", "{34FC6CD9-CB03-4B2E-9818-345A1365ABB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleCalculator", "test\ExampleCalculator\ExampleCalculator.csproj", "{6CAA353F-4E62-4024-9808-40B5E128C891}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleCalculator.ReqnrollTests", "test\ExampleCalculator.ReqnrollTests\ExampleCalculator.ReqnrollTests.csproj", "{E1ADD588-CA44-472B-8603-29BA518810EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleCalculator.SpecFlowTests", "test\ExampleCalculator.SpecFlowTests\ExampleCalculator.SpecFlowTests.csproj", "{87AD5723-0279-4B9D-80E8-EA9E1BA609A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +37,32 @@ Global
 		{F7C794C9-2B88-4C4D-8075-E4309F19C033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7C794C9-2B88-4C4D-8075-E4309F19C033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7C794C9-2B88-4C4D-8075-E4309F19C033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FC6CD9-CB03-4B2E-9818-345A1365ABB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FC6CD9-CB03-4B2E-9818-345A1365ABB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FC6CD9-CB03-4B2E-9818-345A1365ABB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FC6CD9-CB03-4B2E-9818-345A1365ABB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAA353F-4E62-4024-9808-40B5E128C891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAA353F-4E62-4024-9808-40B5E128C891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAA353F-4E62-4024-9808-40B5E128C891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAA353F-4E62-4024-9808-40B5E128C891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1ADD588-CA44-472B-8603-29BA518810EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1ADD588-CA44-472B-8603-29BA518810EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1ADD588-CA44-472B-8603-29BA518810EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1ADD588-CA44-472B-8603-29BA518810EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87AD5723-0279-4B9D-80E8-EA9E1BA609A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87AD5723-0279-4B9D-80E8-EA9E1BA609A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87AD5723-0279-4B9D-80E8-EA9E1BA609A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87AD5723-0279-4B9D-80E8-EA9E1BA609A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F7C794C9-2B88-4C4D-8075-E4309F19C033} = {6D07EE07-50C0-42D0-8349-CB5FA198E4EC}
+		{34FC6CD9-CB03-4B2E-9818-345A1365ABB2} = {6D07EE07-50C0-42D0-8349-CB5FA198E4EC}
+		{6CAA353F-4E62-4024-9808-40B5E128C891} = {6E68E514-57AD-4B18-B9BB-70D4FF6AB5A5}
+		{E1ADD588-CA44-472B-8603-29BA518810EB} = {6E68E514-57AD-4B18-B9BB-70D4FF6AB5A5}
+		{87AD5723-0279-4B9D-80E8-EA9E1BA609A5} = {6E68E514-57AD-4B18-B9BB-70D4FF6AB5A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DFCA7E7-6FFC-4404-BE43-0E76FD618462}
